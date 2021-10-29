@@ -215,7 +215,6 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
 #  文章分类
 #  GitHub 完整支持liquid方式，其他托管的站点可以使用jekyll archives之类的插件自动生成这些页面。
 #  默认使用liquid
