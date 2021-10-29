@@ -42,3 +42,23 @@ server1的安装常用服务的机器。
    ```
 7. 访问管理界面
    浏览器打开 http://192.168.100.101:15672，登录账号admin，登录密码admin123
+
+### Docker安装单节点Zookeeper (还未正式测试)
+
+1. 下载最新镜像
+   docker pull wurstmeister/zookeeper
+2. 单机方式启动
+   docker run -d --name zookeeper -p 2181:2181 -t wurstmeister/zookeeper
+
+### Docker安装单节点kafka (还未正式测试)
+
+1. 下载最新镜像
+   docker pull wurstmeister/kafka
+2. 单机方式启动
+   docker run -d --name kafka \
+   -p 9092:9092 \
+   -e KAFKA_BROKER_ID=0 \
+   -e KAFKA_ZOOKEEPER_CONNECT=10.0.0.101:2181 \
+   -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://10.0.0.101:9092 \
+   -e KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092 wurstmeister/kafka
+

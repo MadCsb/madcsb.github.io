@@ -45,6 +45,7 @@ VMware Workstation Pro 提供虚拟机的创建和管理。
   + 账户 admin
   + 密码 Harbor12345
 * ip = 192.168.100.110
+  
 
 ## docker-learn 虚拟机
 
