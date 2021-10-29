@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "MadCsb"
+title                    : "Mad Csb"
 title_separator          : "|"
 subtitle                 : "疯狂的程sir"
 name                     : "程sir"
-description              : "程sir的博客"
+description              : "这里是我的博客，希望能够把我所学和我所想学的东西展示出来"
 url                      : "https://madcsb.github.io"
 baseurl                  :
 repository               : "MadCsb/madcsb.github.io"
@@ -61,16 +61,16 @@ atom_feed:
   hide                   : # 是否开启feed，false=不隐藏(默认)，true（隐藏）
 search                   : true # 是否提供搜索，默认false
 search_full_content      : # true, false (default)
-search_provider          : "lunr" # 使用lunr (默认), algolia, google 提供搜索
-algolia:
+search_provider          : lunr # 使用lunr (默认), algolia, google 提供搜索
+algolia: # Algolia 搜索 https://www.algolia.com/users/sign_up 祖册账号
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
-google:
+google: # Google 搜索
   search_engine_id       : "c7851268777302838" # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
-# SEO Related
+# SEO相关 5中搜索引擎
 google_site_verification : kICM8M7JVHC__doX53d-7qhj1MP-CfqGdwEQWp_YQZ8
 bing_site_verification   :
 yandex_site_verification :
@@ -193,7 +193,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:categories/:short_year:month:day/:title.html
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -216,20 +216,13 @@ whitelist:
   - jekyll-include-cache
 
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
-category_archive:
+#  文章分类
+#  GitHub 完整支持liquid方式，其他托管的站点可以使用jekyll archives之类的插件自动生成这些页面。
+#  默认使用liquid
+category_archive: # 通过categories 分类
   type: liquid
   path: /categories/
-tag_archive:
+tag_archive: #通过 tags 分类
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
@@ -270,13 +263,19 @@ defaults:
       date_format: "%Y-%m-%d" # 日期格式
   - scope:
       path: ""
-      type: localserver
+      type: vmserver
     values:
       layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "vmserver"
 
 # 设置集合
 collections:
-  localserver:
+  vmserver:
     output: true
     permalink: /:collection/:path/
 
