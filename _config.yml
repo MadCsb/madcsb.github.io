@@ -1,0 +1,272 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+theme                    : minimal-mistakes-jekyll
+# remote_theme             : mmistakes/minimal-mistakes
+minimal_mistakes_skin    : # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "zh-CN"
+title                    : "Mad Csb"
+title_separator          : "|"
+subtitle                 : "疯狂的程sir"
+name                     : "程sir"
+description              : "这里是我的boke，希望能够把我所学和我所想学的东西展示出来"
+url                      : "https://madcsb.github.io"
+baseurl                  : # 尽量不使用，会出现多种问题，用于生成二级目录
+repository               : "MadCsb/madcsb.github.io"
+teaser                   : # 站点文章默认图片，在文章底部管理文章中显示.文章通过头header:teaser:覆盖
+logo                     : "/assets/images/logo.png"
+words_per_minute         : 60 #每分钟读取字数量
+comments:
+  provider               : "giscus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  giscus:
+    repo_id              : "MDEwOlJlcG9zaXRvcnkzOTI4ODUyNjY=" # Shown during giscus setup at https://giscus.app
+    category_name        : "Comments" # Full text name of the category
+    category_id          : "DIC_kwDOF2r0Es4B-048" # Shown during giscus setup at https://giscus.app
+    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : "1" # '1' for enabled (default), '0' for disabled
+    theme                : "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # feed报错路径，默认feed.xml 
+  hide                   : # 是否开启feed，false=不隐藏(默认)，true（隐藏）
+search                   : true # 是否提供搜索，默认false
+search_full_content      : # true, false (default)
+search_provider          : lunr # 使用lunr (默认), algolia, google 提供搜索
+algolia: # Algolia 搜索 https://www.algolia.com/users/sign_up 祖册账号
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google: # Google 搜索
+  search_engine_id       : "c7851268777302838" # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
+# SEO相关 5中搜索引擎
+google_site_verification : kICM8M7JVHC__doX53d-7qhj1MP-CfqGdwEQWp_YQZ8
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+baidu_site_verification  :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: 
+    - https://www.linkedin.com/in/%E5%B0%91%E6%B3%A2-%E7%A8%8B-078605b5/
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : 
+    anonymize_ip         : # true, false (default)
+
+
+# Site Author
+author:
+  name             : "程Sir"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "我是一个后端Java程序员，主攻微服务、高并发系统开发."
+  location         : "江苏省镇江市"
+  email            : "chengshaobo100@163.com"
+  links:
+    - label: "GitHub"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "https://github.com/MadCsb"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      # icon: "/assets/images/logo.png"
+      url: "https://github.com/"
+    - label: "CSDN"
+      # icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.csdn.net/"
+    - label: "码云"
+      # icon: "/assets/images/logo.png"
+      url: "https://gitee.com/"
+    - label: "力扣中国"
+      # icon: "fab fa-fw fa-gitlab"
+      url: "https://leetcode-cn.com/"
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:short_year:month:day/:title.html
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+# 文章分类
+#  GitHub 完整支持liquid方式，其他托管的站点可以使用jekyll archives之类的插件自动生成这些页面。
+#  默认使用liquid
+category_archive: # 通过categories 分类
+  type: liquid
+  path: /categories/
+tag_archive: #通过 tags 分类
+  type: liquid
+  path: /tags/
+
+# HTML压缩
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# 设置默认帖子、页面、集合的配置
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single # 布局
+      author_profile: true
+      read_time: true #阅读时间
+      comments: true #评论
+      share: true #分享
+      related: true #相关文章
+      show_date: true # 是否显示日期
+      date_format: "%Y-%m-%d" # 日期格式
+  - scope:
+      path: ""
+      type: vmserver
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "vmserver"
+
+# 设置集合
+collections:
+  vmserver:
+    output: true
+    permalink: /:collection/:path/
+
+# 在页面head中包含scripts
+head_scripts:
+
+# 在页面body结束之前包含scripts
+footer_scripts:
