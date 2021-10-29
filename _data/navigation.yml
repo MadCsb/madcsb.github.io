@@ -1,0 +1,38 @@
+# main links
+main:
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "虚拟服务器"
+    url: /vmserver/server-introduction
+  - title: "Sample Collections"
+    url: /collection-archive/
+  - title: "Sitemap"
+    url: /sitemap/
+
+vmserver:
+  - title: "服务器介绍"
+    url: /vmserver/server-introduction
+  - title: "虚拟软件 VMware Workstation Pro"
+    url: /vmserver/wmware-workstation-pro
+  - title: "CentOS8Template 模板虚拟机"
+    url: /vmserver/CentOS8Template
+  - title: "docker-k8s 虚拟机"
+    url: /vmserver/docker-k8s
+  - title: "docker-learn 虚拟机"
+    url: /vmserver/docker-learn
+  - title: "大前端 虚拟机"
+    url: /vmserver/大前端
+  - title: "server1 虚拟机"
+    url: /vmserver/server1
+  - title: "server2 虚拟机"
+    url: /vmserver/server2
+  - title: "server3 虚拟机"
+    url: /vmserver/server3
+  - title: "server4 虚拟机"
+    url: /vmserver/server4
+  - title: "server5 虚拟机"
+    url: /vmserver/server5
+  - title: "server6 虚拟机"
+    url: /vmserver/server6
